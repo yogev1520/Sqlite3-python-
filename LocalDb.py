@@ -25,10 +25,6 @@ def add_data(db_name,sql_command):
     cur.execute(sql_command)
     con.commit()
 
-data = [
-    (36, +972559329311,300257227),
-    (28,+972542650209,308088582)
-]
 def Get_data():
     res = cur.execute("SELECT age FROM user")
     return res.fetchall()
